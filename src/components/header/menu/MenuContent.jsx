@@ -31,7 +31,7 @@ function MenuContent({className}) {
                     </p>
                 </div>
             </div>
-            <div className="nav-social nav-content mt-30">
+            {/* <div className="nav-social nav-content mt-30">
                 <div className="nav-social-inner p-relative">
                     <h5 className="sm-title-block mb-10">Follow us</h5>
                     <ul>
@@ -41,7 +41,7 @@ function MenuContent({className}) {
                             </li>)}
                     </ul>
                 </div>
-            </div>
+            </div> */}
         </div>
     );
 }

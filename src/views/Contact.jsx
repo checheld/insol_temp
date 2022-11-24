@@ -51,9 +51,9 @@ function Contact(props) {
                 </DsnGrid>
             </Container>
 
-            <NextPage className="section-margin" to="/portfolio" text="See More Works.">
+            {/* <NextPage className="section-margin" to="/portfolio" text="See More Works.">
                 Portfolio
-            </NextPage>
+            </NextPage> */}
             <Footer/>
 
 

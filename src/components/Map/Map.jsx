@@ -56,11 +56,10 @@ function Map({googleMapKey, showMarker, mapIcon, className, height, markerOption
     const defaultCenter = restProps.defaultCenter || {},
         center = restProps.center || {};
 
-
     return (
-        <div className={className} style={{height: height, width: '100%'}}>
+        <div id="map" className={className} style={{height: height, width: '100%'}}>
 
-            <GoogleMapReact
+            {/* <GoogleMapReact
                 bootstrapURLKeys={{key: googleMapKey}}
                 {...restProps}
             >
@@ -70,7 +69,7 @@ function Map({googleMapKey, showMarker, mapIcon, className, height, markerOption
                     lng={center.lng || defaultCenter.lng}
                     mapIcon={mapIcon}
                 />}
-            </GoogleMapReact>
+            </GoogleMapReact> */}
 
         </div>
     );

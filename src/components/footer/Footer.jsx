@@ -27,7 +27,7 @@ function Footer({className, ...restProps}) {
                             <NavLink to="/">
                                 <Brand width="90px"/>
                             </NavLink>
-                            <SocialMedia className="mt-20"/>
+                            {/* <SocialMedia className="mt-20"/> */}
                         </div>
 
                         {/*Navigation*/}

@@ -18,7 +18,7 @@ function SocialMediaSlider({className}) {
                 </svg>
             </div>
 
-            <SocialMedia className='social-network' />
+            {/* <SocialMedia className='social-network' /> */}
 
         </div>
     )

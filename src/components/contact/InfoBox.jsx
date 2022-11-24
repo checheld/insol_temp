@@ -19,7 +19,7 @@ function InfoBox({className}) {
                     <a href="tel:+1 (800) 990 8877" target="_blank" rel="noreferrer">+1 (800) 990 8877</a>
                 </li>
                 <li>
-                    <span className="mr-10">Whatsapp</span>
+                    <span className="mr-10">Telegram</span>
                     <a href="http://wa.me/+1 (800) 990 8877" target="_blank" rel="noreferrer">+1 (800) 990 8877</a>
                 </li>
                 <li>
