@@ -22,40 +22,16 @@
 
 
     <!-- Font Google -->
-    <link rel="preload" href="//fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+    <!-- <link rel="preload" href="//fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
           as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript>
         <link href="//fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
               rel="stylesheet">
-    </noscript>
+    </noscript> -->
 
-    <link rel="preload" as="video" href="https://theme.dsngrid.com/video/droow.mp4" type="video/mp4"/>
+    <!-- <link rel="preload" as="video" href="https://theme.dsngrid.com/video/droow.mp4" type="video/mp4"/> -->
 
     <script src="https://api-maps.yandex.ru/2.1/?apikey=93c0f307-e2a8-4f10-8c2c-adc0e7218054&lang=ru_RU" type="text/javascript">
-    </script>
-
-    <script type="text/javascript">
-      ymaps.ready(init);
-      function init() {
-        var myMap = new ymaps.Map("map", {
-          center: [47.21795105, 38.92467227],
-          zoom: 19
-        });
-        var myGeoObject = new ymaps.GeoObject({
-          geometry: {
-            type: "Point",
-            coordinates: [47.21795105, 38.92467227]
-          },
-          properties: {
-            iconContent: 'InSol',
-            hintContent: 'адрес фирмы в сплывающем окне'
-          }
-        },
-          {
-            preset: 'islands#blackStretchyIcon'
-          });
-        myMap.geoObjects.add(myGeoObject);
-      }
     </script>
 
     <!--

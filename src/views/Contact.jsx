@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 
 import {Container} from "react-bootstrap";
 import DsnGrid from "../components/DsnGrid";
@@ -19,8 +19,34 @@ const headerContent = {
 
 function Contact(props) {
 
-    const center = {lat: 30.0489206, lng: 31.258553};
-
+    // const center = {lat: 30.0489206, lng: 31.258553};
+    const ymaps = window.ymaps;
+    
+    useEffect(() => {
+        ymaps.ready(init);
+        function init() {
+            console.log(11111)
+            var myMap = new ymaps.Map("map", {
+                center: [47.21795105, 38.92467227],
+                zoom: 19
+            });
+            var myGeoObject = new ymaps.GeoObject({
+                geometry: {
+                    type: "Point",
+                    coordinates: [47.21795105, 38.92467227]
+                },
+                properties: {
+                    iconContent: 'InSol',
+                    hintContent: 'адрес фирмы в сплывающем окне'
+                }
+            },
+                {
+                    preset: 'islands#blackStretchyIcon'
+                });
+            myMap.geoObjects.add(myGeoObject);
+        }
+    }, []);
+    
     return (
         <React.Fragment>
 
@@ -34,17 +60,17 @@ function Contact(props) {
             </HeaderNormalTow>
 
             {/*Start Map*/}
-            <Map
+            {/* <Map
                 googleMapKey="AIzaSyDMyAS2jdzj-vdgBIFaIStYOWJtSlghndg"
                 defaultZoom={10}
                 options={optionDroowMap}
                 height="80vh"
                 defaultCenter={center}
                 showMarker
-            />
-
+            /> */}
+            <div id="map" style={{height: "80vh", width: '100%'}}></div>
             {/*Start Contact Form && Info Box*/}
-            <Container className="section-margin">
+            <Container>
                 <DsnGrid col={2} colTablet={1}>
                     <InfoBox className="background-section p-30"/>
                     <ContactForm/>

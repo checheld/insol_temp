@@ -55,7 +55,28 @@ function Map({googleMapKey, showMarker, mapIcon, className, height, markerOption
 
     const defaultCenter = restProps.defaultCenter || {},
         center = restProps.center || {};
-
+        const ymaps = window.ymaps;
+        ymaps.ready(init);
+        function init() {
+          var myMap = new ymaps.Map("map", {
+            center: [47.21795105, 38.92467227],
+            zoom: 19
+          });
+          var myGeoObject = new ymaps.GeoObject({
+            geometry: {
+              type: "Point",
+              coordinates: [47.21795105, 38.92467227]
+            },
+            properties: {
+              iconContent: 'InSol',
+              hintContent: 'адрес фирмы в сплывающем окне'
+            }
+          },
+            {
+              preset: 'islands#blackStretchyIcon'
+            });
+          myMap.geoObjects.add(myGeoObject);
+        }
     return (
         <div id="map" className={className} style={{height: height, width: '100%'}}>
 
