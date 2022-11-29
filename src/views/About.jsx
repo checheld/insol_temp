@@ -36,7 +36,7 @@ function About() {
             </HeaderNormal>
 
             {/*Start Box Right Info*/}
-            <BoxRight className="mb-section text-center" src="/assets/img/pexels.jpg"
+            <BoxRight className="mb-section text-center" src="/assets/img/pexels.jfif"
                       parallaxFrom={{scale: 1.2}} parallax={{scale: 1}} overlay={4}
             >
                 <FadeUpTrigger>
@@ -60,14 +60,14 @@ function About() {
             {/*End Service Section*/}
 
             {/*Start Team*/}
-            <section className="section-margin background-section section-padding">
+            {/* <section className="section-margin background-section section-padding">
                 <Container className="dsn-right-container">
                     <TitleSection description="our team">
                         The best team ever!
                     </TitleSection>
                     <Team loop grabCursor/>
                 </Container>
-            </section>
+            </section> */}
             {/*End Team*/}
 
             {/*Start Service Section*/}
@@ -80,7 +80,7 @@ function About() {
             {/*End Service Section*/}
 
             {/*Start Brand*/}
-            <Container className="section-margin">
+            {/* <Container className="section-margin">
                 <TitleSection description="Our clients">
                     Your successful, our <br/> reputation
                 </TitleSection>
@@ -90,10 +90,10 @@ function About() {
                     colGap={2}
                     rowGap={2}
                 />
-            </Container>
+            </Container> */}
             {/*End Brand*/}
 
-            <NextPageContent className="section-margin"/>
+            {/* <NextPageContent className="section-margin"/> */}
             <Footer/>
 
 

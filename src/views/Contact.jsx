@@ -25,7 +25,6 @@ function Contact(props) {
     useEffect(() => {
         ymaps.ready(init);
         function init() {
-            console.log(11111)
             var myMap = new ymaps.Map("map", {
                 center: [47.21795105, 38.92467227],
                 zoom: 19
@@ -44,6 +43,7 @@ function Contact(props) {
                     preset: 'islands#blackStretchyIcon'
                 });
             myMap.geoObjects.add(myGeoObject);
+            myMap.behaviors.disable('scrollZoom'); 
         }
     }, []);
     
@@ -80,7 +80,7 @@ function Contact(props) {
             {/* <NextPage className="section-margin" to="/portfolio" text="See More Works.">
                 Portfolio
             </NextPage> */}
-            <Footer/>
+            <Footer />
 
 
         </React.Fragment>

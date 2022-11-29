@@ -76,7 +76,7 @@ function Demo2(props) {
             {/*End Hero Section*/}
 
             {/*Start Box Info With Image*/}
-            <BoxImageVertical src="/assets/img/project/project1/5.jpg" className="section-margin">
+            {/* <BoxImageVertical src="/assets/img/project/project1/5.jpg" className="section-margin">
                 <TitleCover>Droow</TitleCover>
                 <FadeUpTrigger tag={DsnGrid} col={1} rowGap={30} rowGapTablet={20}>
                     <h2 className='title-section border-line-left'>
@@ -97,19 +97,19 @@ function Demo2(props) {
                         <ButtonDefault text="Learn More" icon={faAngleRight} href="/portfolio/time-tag-watch"/>
                     </div>
                 </FadeUpTrigger>
-            </BoxImageVertical>
+            </BoxImageVertical> */}
             {/*End  Box Info With Image*/}
 
             {/*Start Team*/}
-            <Container className="section-margin dsn-right-container">
+            {/* <Container className="section-margin dsn-right-container">
                 <TitleSection description="our team">
                     The best team ever!
                 </TitleSection>
                 <Team loop grabCursor/>
-            </Container>
+            </Container> */}
             {/*End Team*/}
 
-            <NextPageContent className="section-margin"/>
+            {/* <NextPageContent className="section-margin"/> */}
             <Footer/>
 
         </>

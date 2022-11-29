@@ -53,7 +53,7 @@ function LoadingPage(props) {
             <div className="preloader-after"/>
             <div className="preloader-before"/>
             <div className="preloader-block">
-                <div className="title">Droow</div>
+                <div className="title">InSol Group</div>
                 <div className="percent">{percent}</div>
                 <div className="loading">loading...</div>
             </div>

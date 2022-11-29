@@ -9,7 +9,7 @@ const menuContent = [
         name: "Home",
         dropdownMenu: [
             {name: "Main Demo", to: "/"},
-            {name: "One Page 2", to: "/demo-2"},
+            // {name: "One Page 2", to: "/demo-2"},
             {name: "One Page 3", to: "/demo-3"},
         ]
     },

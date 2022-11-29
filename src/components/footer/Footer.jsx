@@ -18,7 +18,7 @@ function Footer({className, ...restProps}) {
 
 
     return (
-        <footer className={dsnCN('footer background-section', className)} {...restProps}>
+        <footer  id='scroll_down' className={dsnCN('footer background-section', className)} {...restProps}>
             <Container>
                 <div className="footer-links pt-80 pb-40">
                     <DsnGrid col={4} colTablet={2}>

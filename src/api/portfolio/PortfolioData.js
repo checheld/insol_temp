@@ -15,7 +15,7 @@ const data = [
         slug: 'time-tag-watch',
         category: ['Brand'],
         description: 'Sometimes, we need to check the time, wondering when our work or meeting will finish, without getting caught by others.',
-        src: '/assets/img/project/project1/1.jpg',
+        src: '/assets/img/project/project1/1.jfif',
         srcSlider: '/assets/img/project/project1/13.jpg',
         overlay: 2,
         component: (props) => <TimeTagWatch {...props} />

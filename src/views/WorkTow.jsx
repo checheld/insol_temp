@@ -26,7 +26,7 @@ function WorkTow(props) {
                 />
             </Container>
 
-            <NextPageContent className="section-margin" />
+            {/* <NextPageContent className="section-margin" /> */}
             <Footer />
 
 

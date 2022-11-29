@@ -64,7 +64,7 @@ const BastianBux = ({data}) => {
                            caption="Caption #1"/>
 
             {/*Start Box Right Info*/}
-            <BoxRight className="section-margin" src="/assets/img/project/project9/3.jpg">
+            {/* <BoxRight className="section-margin" src="/assets/img/project/project9/3.jpg">
                 <FadeUpTrigger>
                     {(ref) =>
                         <React.Fragment>
@@ -81,7 +81,7 @@ const BastianBux = ({data}) => {
 
                         </React.Fragment>}
                 </FadeUpTrigger>
-            </BoxRight>
+            </BoxRight> */}
             {/*End Box Right Info*/}
 
             <ParallaxImage className="section-margin" src="/assets/img/project/project9/4.gif" caption="Caption #5"

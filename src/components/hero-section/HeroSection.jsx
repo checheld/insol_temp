@@ -19,7 +19,7 @@ const HeroContent = {
     authorJob: "Digital Artisit",
     experienceNumber: "25",
     experienceDescription: `YEARS OF \nDIGITAL EXPERIENCE`,
-    heroImage: '/assets/img/about.jpg'
+    heroImage: '/assets/img/project/project2/6.jfif'
 };
 
 

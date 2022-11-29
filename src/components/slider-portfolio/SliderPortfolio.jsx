@@ -162,20 +162,20 @@ function SliderPortfolio({className, typeBg, parallax, tag: Tag = 'div'}: Slider
                         </SwiperSlide>
                     )}
 
-                    <div className="control-num">
+                    {/* <div className="control-num">
                         <span className="sup">{((active) <= 9 ? "0" : '') + (active + 1)}</span>
                     </div>
-                    <ControlNav/>
+                    <ControlNav/> */}
 
                 </Swiper>
             </div>
             <ContentSlider data={dataProject} ref={setContentRef} activeClass={active}/>
-            <NavSlider data={dataProject}
+            {/* <NavSlider data={dataProject}
                        speed={optionSwiper.speed}
                        onSwiper={setNavSwiper}
                        controller={{control: bgSwiper}}
-            />
-            <SocialMediaSlider/>
+            /> */}
+            {/* <SocialMediaSlider/> */}
         </Tag>
 
     );

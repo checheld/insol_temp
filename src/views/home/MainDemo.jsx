@@ -56,7 +56,7 @@ const MainDemo = () => {
             {/*End Service Section*/}
 
             {/*Start Box Right Info*/}
-            <HeroSectionTow className="section-margin text-center"/>
+            {/* <HeroSectionTow className="section-margin text-center"/> */}
             {/*End Box Right Info*/}
 
 
@@ -69,7 +69,7 @@ const MainDemo = () => {
 
 
             {/*Start Box Info With Image*/}
-            <BoxImageVertical src="/assets/img/project/project1/5.jpg" className="section-margin">
+            {/* <BoxImageVertical src="/assets/img/project/project1/5.jpg" className="section-margin">
                 <TitleCover>Droow</TitleCover>
                 <FadeUpTrigger>
                     {(ref) =>
@@ -98,7 +98,7 @@ const MainDemo = () => {
                         </DsnGrid>
                     }
                 </FadeUpTrigger>
-            </BoxImageVertical>
+            </BoxImageVertical> */}
             {/*End  Box Info With Image*/}
 
             {/*Start Testimonial*/}
@@ -108,16 +108,16 @@ const MainDemo = () => {
             {/*End Testimonial*/}
 
             {/*Start Blog*/}
-            <Container className="section-margin dsn-right-container">
+            {/* <Container className="section-margin dsn-right-container">
                 <TitleSection description="Latest News">
                     Latest & Greatest Post
                 </TitleSection>
                 <BlogSwiper grabCursor loop autoHeight/>
-            </Container>
+            </Container> */}
             {/*End Blog*/}
 
             {/*Start Brand*/}
-            <Container className="section-margin">
+            {/* <Container className="section-margin">
                 <TitleSection description="Our clients">
                     Your successful, our <br/> reputation
                 </TitleSection>
@@ -127,10 +127,10 @@ const MainDemo = () => {
                     colGap={2}
                     rowGap={2}
                 />
-            </Container>
+            </Container> */}
             {/*End Brand*/}
 
-            <NextPageContent className="section-margin"/>
+            {/* <NextPageContent className="section-margin"/> */}
             <Footer/>
 
         </React.Fragment>
