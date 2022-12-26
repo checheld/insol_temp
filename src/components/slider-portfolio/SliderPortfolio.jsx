@@ -153,7 +153,7 @@ function SliderPortfolio({className, typeBg, parallax, tag: Tag = 'div'}: Slider
         <Tag className={dsnCN('root-slider half-content v-dark-head background-main', className)} ref={rootSlider}>
 
             <div className={`bg-image hero-img ${typeBg}`} ref={bg}>
-                <Swiper  {...optionSwiper} grabCursor>
+                {/* <Swiper  {...optionSwiper} grabCursor> */}
                     {dataProject.map((item, key) =>
                         <SwiperSlide className="overflow" key={key} data-dsn-id={key}>
                             <BgImage className={"dsn-swiper-parallax-transform"} src={item.src} video={item.video}
@@ -167,7 +167,7 @@ function SliderPortfolio({className, typeBg, parallax, tag: Tag = 'div'}: Slider
                     </div>
                     <ControlNav/> */}
 
-                </Swiper>
+                {/* </Swiper> */}
             </div>
             <ContentSlider data={dataProject} ref={setContentRef} activeClass={active}/>
             {/* <NavSlider data={dataProject}

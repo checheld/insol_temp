@@ -346,6 +346,24 @@ body {
   }
 }
 
+.map-selector {
+  position: absolute;
+  z-index: 1;
+  right: 240px;
+  top: 10px;
+  width: 45px;
+  height: 29px;
+  padding: 5px;
+  box-shadow: 0 1px 1px #d1d1cc, 
+              0 2px 2px #d1d1cc, 
+              0 4px 4px #d1d1cc;
+  border-radius: 4px;
+  
+  appearance: none; 
+  //background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMSIgaGVpZ2h0PSI2Ij48cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMC4zMSAwTDUuNSA0LjY3LjY5IDAgMCAuNjcgNS41IDYgMTEgLjY3eiIgY2xpcC1ydWxlPSJldmVub2RkIi8+PC9zdmc+') no-repeat right;
+  background: no-repeat 80% 50% url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMSIgaGVpZ2h0PSI2Ij48cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMC4zMSAwTDUuNSA0LjY3LjY5IDAgMCAuNjcgNS41IDYgMTEgLjY3eiIgY2xpcC1ydWxlPSJldmVub2RkIi8+PC9zdmc+');
+  background-color: #fff;
+}
 
 #root > .dsn-scrollbar[data-scrollbar] {
   height: 100vh;

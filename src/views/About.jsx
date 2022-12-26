@@ -40,9 +40,9 @@ function About() {
                       parallaxFrom={{scale: 1.2}} parallax={{scale: 1}} overlay={4}
             >
                 <FadeUpTrigger>
-                    <h3>Hello we are, <br/> Dsn Grid.</h3>
+                    <h3>Hello we are, <br/> InSol Group.</h3>
                     <p className="mt-30 m-w750 dsn-auto">
-                        Founded in 2000, Dsn Grid has become one of the best Digital Agency in ThemeForest. Blue money
+                        Founded in 2000, InSol Group has become one of the best Digital Agency in ThemeForest. Blue money
                         going forward, but deploy to production. C-suite. First-order optimal strategies build on a
                         culture of contribution and inclusion so those options
                     </p>

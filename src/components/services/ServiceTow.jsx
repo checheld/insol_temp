@@ -9,19 +9,19 @@ import {dsnCN} from "../../hooks/helper";
 const ServicesDetails = [
     {
         title: "DIGITAL PRODUCTS",
-        description: `As Vintage decided to have a closer look into fast-paced New York web design realm in person, we get to acquaint with most diverse and exceptionally captivating personalities.`,
+        description: `As Vintage decided to have a closer look into fast-paced Taganrog web design realm in person, we get to acquaint with most diverse and exceptionally captivating personalities.`,
     },
     {
         title: "UI-UX DESIGN",
-        description: `As Vintage decided to have a closer look into fast-paced New York web design realm in person, we get to acquaint with most diverse and exceptionally captivating personalities.`,
+        description: `As Vintage decided to have a closer look into fast-paced Taganrog web design realm in person, we get to acquaint with most diverse and exceptionally captivating personalities.`,
     },
     {
         title: "WEB DEVELOPMENT",
-        description: `As Vintage decided to have a closer look into fast-paced New York web design realm in person, we get to acquaint with most diverse and exceptionally captivating personalities.`,
+        description: `As Vintage decided to have a closer look into fast-paced Taganrog web design realm in person, we get to acquaint with most diverse and exceptionally captivating personalities.`,
     },
     {
         title: "WEB DEVELOPMENT",
-        description: `As Vintage decided to have a closer look into fast-paced New York web design realm in person, we get to acquaint with most diverse and exceptionally captivating personalities.`,
+        description: `As Vintage decided to have a closer look into fast-paced Taganrog web design realm in person, we get to acquaint with most diverse and exceptionally captivating personalities.`,
     }
 ]
 

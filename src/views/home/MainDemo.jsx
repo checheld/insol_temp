@@ -21,8 +21,7 @@ import BlogSwiper from "../../components/blog/BlogSwiper";
 import BrandClient from "../../components/brand-client/BrandClient";
 import NextPageContent from "../../components/next/NextPageContent";
 import Footer from "../../components/footer/Footer";
-import HeroSectionTow from "../../components/hero-section/HeroSectionTow";
-
+import HeroSectionTow from "../../components/hero-section/HeroSectionTow"
 
 const MainDemo = () => {
 
