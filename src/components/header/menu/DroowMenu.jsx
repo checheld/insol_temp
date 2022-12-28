@@ -11,6 +11,8 @@ const menuContent = [
             {name: "Main Demo", to: "/"},
             // {name: "One Page 2", to: "/demo-2"},
             {name: "One Page 3", to: "/demo-3"},
+            {name: "One Page 3 copy 1", to: "/demo-3-copy1"},
+            {name: "One Page 3 copy 2", to: "/demo-3-copy2"},
         ]
     },
     // {

@@ -20,7 +20,6 @@ import NextPageContent from "../../components/next/NextPageContent";
 import Footer from "../../components/footer/Footer";
 import {Helmet} from "react-helmet";
 
-
 const heroContent = {
     title: "We Are Digital Agency.",
     src: '//theme.dsngrid.com/video/videos.mp4',

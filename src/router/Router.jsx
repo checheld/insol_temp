@@ -11,6 +11,9 @@ const MainDemo = React.lazy(() => import("../views/home/MainDemo"));
 const Demo2 = React.lazy(() => import("../views/home/Demo2"));
 const Demo3 = React.lazy(() => import("../views/home/Demo3"));
 
+const Demo3_copy1 = React.lazy(() => import("../views/home/Demo3_copy1"));
+const Demo3_copy2 = React.lazy(() => import("../views/home/Demo3_copy2"));
+
 const SliderOne = React.lazy(() => import("../views/slider/SliderOne"));
 const SliderTow = React.lazy(() => import("../views/slider/SliderTow"));
 const SliderThree = React.lazy(() => import("../views/slider/SliderThree"));
@@ -52,6 +55,9 @@ const Router = () => {
                     <Route path="/" element={<MainDemo/>}/>
                     <Route path="/demo-2" element={<Demo2/>}/>
                     <Route path="/demo-3" element={<Demo3/>}/>
+
+                    <Route path="/demo-3-copy1" element={<Demo3_copy1/>}/>
+                    <Route path="/demo-3-copy2" element={<Demo3_copy2/>}/>
 
                     <Route path="/slider" element={<SliderOne/>}/>
                     <Route path="/slider-2" element={<SliderTow/>}/>
