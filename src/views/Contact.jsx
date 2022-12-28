@@ -24,7 +24,7 @@ function Contact(props) {
         ymaps.ready(init);
         function init(ymaps) {
             var myMap = new ymaps.Map("map", {
-                center: [47.22961357876832, 38.917702905338054],
+                center: [40.206597, 44.521862],
                 zoom: 19
             }, {
                 searchControlProvider: 'yandex#search'
@@ -33,11 +33,11 @@ function Contact(props) {
             var myGeoObject = new ymaps.GeoObject({
                 geometry: {
                     type: "Point",
-                    coordinates: [47.22961357876832, 38.917702905338054]
+                    coordinates: [40.206597, 44.521862]
                 },
                 properties: {
                     iconContent: 'InSol Group',
-                    hintContent: 'Dzerzhinskogo st. 65А, Taganrog, Rostov region, 347905'
+                    hintContent: 'Armenia, Yerevan, 59 Komitas Ave'
                 }
             },
                 {

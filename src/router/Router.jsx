@@ -12,7 +12,6 @@ const Demo2 = React.lazy(() => import("../views/home/Demo2"));
 const Demo3 = React.lazy(() => import("../views/home/Demo3"));
 
 const Demo3_copy1 = React.lazy(() => import("../views/home/Demo3_copy1"));
-const Demo3_copy2 = React.lazy(() => import("../views/home/Demo3_copy2"));
 
 const SliderOne = React.lazy(() => import("../views/slider/SliderOne"));
 const SliderTow = React.lazy(() => import("../views/slider/SliderTow"));
@@ -52,24 +51,23 @@ const Router = () => {
             <Suspense fallback={<div className="background-main h-100-v" />}>
                 <Routes location={location}>
 
-                    <Route path="/" element={<MainDemo/>}/>
-                    <Route path="/demo-2" element={<Demo2/>}/>
-                    <Route path="/demo-3" element={<Demo3/>}/>
+                    {/* <Route path="/" element={<MainDemo/>}/> */}
+                    {/* <Route path="/demo-2" element={<Demo2/>}/>
+                    <Route path="/demo-3" element={<Demo3/>}/> */}
 
-                    <Route path="/demo-3-copy1" element={<Demo3_copy1/>}/>
-                    <Route path="/demo-3-copy2" element={<Demo3_copy2/>}/>
+                    <Route path="/" element={<Demo3_copy1/>}/>
 
-                    <Route path="/slider" element={<SliderOne/>}/>
+                    {/* <Route path="/slider" element={<SliderOne/>}/>
                     <Route path="/slider-2" element={<SliderTow/>}/>
                     <Route path="/slider-3" element={<SliderThree/>}/>
 
                     <Route exact path="/portfolio" element={<Work/>}/>
                     <Route exact path="/portfolio-2" element={<WorkTow/>}/>
-                    <Route exact path="/portfolio/:slug" element={<ProjectDetails/>}/>
+                    <Route exact path="/portfolio/:slug" element={<ProjectDetails/>}/> */}
 
                     <Route exact path="/about" element={<About/>}/>
                     <Route exact path="/contact" element={<Contact/>}/>
-                    <Route exact path="/blog-details" element={<BlogDetails/>}/>
+                    {/* <Route exact path="/blog-details" element={<BlogDetails/>}/> */}
                     <Route exact path="*" element={<h1>Not Found</h1>}/>
                 </Routes>
             </Suspense>
