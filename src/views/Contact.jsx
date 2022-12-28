@@ -21,11 +21,9 @@ function Contact(props) {
     const ymaps = window.ymaps;
 
     useEffect(() => {
-        var myMap;
-        var script;
         ymaps.ready(init);
         function init(ymaps) {
-            myMap = new ymaps.Map("map", {
+            var myMap = new ymaps.Map("map", {
                 center: [47.22961357876832, 38.917702905338054],
                 zoom: 19
             }, {
@@ -39,7 +37,7 @@ function Contact(props) {
                 },
                 properties: {
                     iconContent: 'InSol Group',
-                    hintContent: 'ул. Дзержинского 65А, Таганрог, Ростовская обл., 347905'
+                    hintContent: 'Dzerzhinskogo st. 65А, Taganrog, Rostov region, 347905'
                 }
             },
                 {
@@ -48,31 +46,13 @@ function Contact(props) {
             myMap.geoObjects.add(myGeoObject);
             myMap.behaviors.disable('scrollZoom');
         }
-
-        var head = document.getElementsByTagName('head')[0];
-        var select = document.getElementById('language');
-        select.createMap = function () {
-            var language = this.value;
-            if (myMap) {
-                myMap.destroy();
-            }
-            script = document.createElement('script');
-            script.type = 'text/javascript';
-            script.charset = 'utf-8';
-            script.src = 'https://api-maps.yandex.ru/2.1/?onload=init_' + language + '&lang=' + language + '_RU&ns=ymaps_' + language;
-            head.appendChild(script);
-            window['init_' + language] = function () {
-                init(window['ymaps_' + language]);
-            }
-        };
-        document.getElementById('language').addEventListener("change", select.createMap);
     }, []);
     
     return (
         <React.Fragment>
 
             <Helmet>
-                <title>Droow - Contact Us </title>
+                <title>InSol Group - Contact Us </title>
             </Helmet>
 
             {/*Start Header*/}
@@ -89,13 +69,7 @@ function Contact(props) {
                 defaultCenter={center}
                 showMarker
             /> */}
-            <div style={{position: 'relative'}}>
-                <select id="language"  className='map-selector'>
-                    <option value="ru">ru</option>
-                    <option selected value="en">en</option>
-                </select>
-                <div id="map" style={{ height: "80vh", width: '100%' }} />
-            </div>
+            <div id="map" style={{ height: "80vh", width: '100%' }} />
             {/*Start Contact Form && Info Box*/}
             <Container>
                 <DsnGrid col={2} colTablet={1}>

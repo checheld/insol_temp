@@ -20,7 +20,7 @@ const ToastReel = ({data}) => {
     return (
         <React.Fragment>
             <Helmet>
-                <title>Droow - {data.title} </title>
+                <title>InSol Group - {data.title} </title>
                 <meta
                     name="description"
                     content={data.description}

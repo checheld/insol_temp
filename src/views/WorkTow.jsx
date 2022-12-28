@@ -12,7 +12,7 @@ function WorkTow(props) {
     return (
         <React.Fragment>
             <Helmet>
-                <title>Droow - Portfolio & Agency React Template </title>
+                <title>InSol Group - Main page </title>
             </Helmet>
             <HeaderNormal className="background-section text-uppercase" description="Some Of Our Latest">
                 Awesome Best<br/> Portfolio

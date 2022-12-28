@@ -30,7 +30,7 @@ function Demo2(props) {
     return (
         <>
             <Helmet>
-                <title>Droow - Portfolio & Agency React Template </title>
+                <title>InSol Group - Main page </title>
             </Helmet>
             <HeaderNormal className="background-section" description={heroContent.description}>
                 {heroContent.title}

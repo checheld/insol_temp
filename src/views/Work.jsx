@@ -11,7 +11,7 @@ function Work(props) {
     return (
         <React.Fragment>
             <Helmet>
-                <title>Droow - Portfolio & Agency React Template </title>
+                <title>InSol Group - Main page </title>
             </Helmet>
             <HeaderNormalTow description="Our Work">portfolio</HeaderNormalTow>
             <Container>

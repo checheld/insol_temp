@@ -36,7 +36,7 @@ function Demo3(props) {
     return (
         <React.Fragment>
             <Helmet>
-                <title>Droow - Portfolio & Agency React Template </title>
+                <title>InSol Group - Main page </title>
             </Helmet>
 
             <HeaderFull heroContent={heroContent} overlay={6}/>
