@@ -9,19 +9,19 @@ import {dsnCN} from "../../hooks/helper";
 const ServicesDetails = [
     {
         title: "DIGITAL PRODUCTS",
-        description: `As Vintage decided to have a closer look into fast-paced Taganrog web design realm in person, we get to acquaint with most diverse and exceptionally captivating personalities.`,
+        description: `Development of web services of all complexity. CRM systems, architecture and more.`,
     },
     {
-        title: "UI-UX DESIGN",
-        description: `As Vintage decided to have a closer look into fast-paced Taganrog web design realm in person, we get to acquaint with most diverse and exceptionally captivating personalities.`,
+        title: "E-COMMERCE",
+        description: `Online stores are one of the strong and key areas in our company. Development of any complexity, training and professional approach to increase your sales.`,
     },
     {
-        title: "WEB DEVELOPMENT",
-        description: `As Vintage decided to have a closer look into fast-paced Taganrog web design realm in person, we get to acquaint with most diverse and exceptionally captivating personalities.`,
+        title: "MOBILE DEVELOPMENT",
+        description: `Our goal is to save you time and resources. Developing multi-platform applications using Flutter by Google.`,
     },
     {
-        title: "WEB DEVELOPMENT",
-        description: `As Vintage decided to have a closer look into fast-paced Taganrog web design realm in person, we get to acquaint with most diverse and exceptionally captivating personalities.`,
+        title: "CLOUD SERVICES",
+        description: `Having huge experience in working with cloud services, we are ready to solve problems of any complexity.`,
     }
 ]
 

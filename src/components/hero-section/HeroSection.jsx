@@ -12,14 +12,14 @@ import ParallaxImage from "../parallax-image/ParallaxImage";
 import {dsnCN} from "../../hooks/helper";
 
 const HeroContent = {
-    title: "Hello, we are \nInSol Group",
-    description: `Founded in 2000, InSol Group has become one of the best Digital Agency in Themeforest.
-     Blue money going forward, but deploy to production. First-order optimal strategies build on a culture of contribution and inclusion so those options`,
-    authorTitle: "ALEKSANDR KRYUK",
-    authorJob: "Digital Artisit",
-    experienceNumber: "25",
+    title: "Hello, let’s get \nacquainted",
+    description: `InSol Group has assembled a team of experienced and dedicated professionals. 
+        Our main mission is to develop flexible and intelligent solutions for your business`,
+    authorTitle: "TONY",
+    authorJob: "CEO",
+    experienceNumber: "11",
     experienceDescription: `YEARS OF \nDIGITAL EXPERIENCE`,
-    heroImage: '/assets/img/project/project2/6.jfif'
+    heroImage: '/assets/img/zan--gxW3aq6onU-unsplash.jpg'
 };
 
 

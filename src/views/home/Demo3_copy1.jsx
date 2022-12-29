@@ -18,11 +18,12 @@ import BlogSwiper from "../../components/blog/BlogSwiper";
 import BrandClient from "../../components/brand-client/BrandClient";
 import NextPageContent from "../../components/next/NextPageContent";
 import Footer from "../../components/footer/Footer";
+import ServiceIcons from "../../components/services/ServiceIcons";
 import {Helmet} from "react-helmet";
 
 
 const heroContent = {
-    title: "We Are Digital Agency.",
+    title: "We Are InSol Group.",
     src: '/assets/videos/video.mp4',
     video: {
         poster: '/assets/img/video-bg.jpg',
@@ -50,19 +51,22 @@ function Demo3(props) {
             {/*Start Service Section*/}
             <Container className="section-margin">
                 <TitleSection description="Our Services">
-                    New Branding Agency
+                    WE KNOW HOW TO DO GREAT
                 </TitleSection>
                 <ServiceTow col={2} colMobile={1}/>
             </Container>
             {/*End Service Section*/}
-
+            <Container className="section-margin">
+                <TitleSection description="Our Technologies " />
+                <ServiceIcons />
+            </Container>
             {/*Start Box Right Info*/}
             {/* <HeroSectionTow className="section-margin text-center"/> */}
             {/*End Box Right Info*/}
 
             {/*Start Portfolio Swiper*/}
             <Container as={TitleSection} description="Our Work" className="mt-section">
-                Featured Projects
+                Intellectual Solutions
             </Container>
             <PortfolioSwiper className="mb-section" grabCursor autoplay/>
             {/*End Portfolio Swiper*/}
