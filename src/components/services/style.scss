@@ -12,7 +12,7 @@
   flex-wrap: wrap;
 }
 
-.iconsContainer div{
+.iconsContainer .iconContainer{
   margin-right: 315px;
   margin-bottom: 150px;
 
@@ -43,6 +43,17 @@
     margin-right: 20px;
     margin-bottom: 20px;
   }
+}
+
+.techName {
+  font-weight: 700;
+  font-size: 22px;
+  align-items: center;
+  text-align: center;
+}
+
+.ourTech {
+  justify-content: center;
 }
 
 .dsn-services {

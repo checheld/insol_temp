@@ -5,6 +5,7 @@ import {faAngleRight} from "@fortawesome/free-solid-svg-icons";
 import HeaderFull from "../../components/header/HeaderFull";
 import HeroSection from "../../components/hero-section/HeroSection";
 import TitleSection from "../../components/heading/TitleSection";
+import ServiceOne from "../../components/services/ServiceOne";
 import ServiceTow from "../../components/services/ServiceTow";
 import FadeUpTrigger from "../../animation/FadeUpTrigger";
 import ButtonDefault from "../../components/button/button-default/ButtonDefault";
@@ -58,14 +59,15 @@ function Demo3(props) {
             {/*End Service Section*/}
             <Container className="section-margin">
                 <TitleSection description="Our Technologies " />
-                <ServiceIcons />
+                {/* <ServiceIcons /> */}
+                <ServiceOne className="text-center" col={3} colMobile={1} colGap={0} colGapTablet={30}/>
             </Container>
             {/*Start Box Right Info*/}
             {/* <HeroSectionTow className="section-margin text-center"/> */}
             {/*End Box Right Info*/}
 
             {/*Start Portfolio Swiper*/}
-            <Container as={TitleSection} description="Our Work" className="mt-section">
+            <Container as={TitleSection} description="Our Work" className="mt-section ourWorkTitle">
                 Intellectual Solutions
             </Container>
             <PortfolioSwiper className="mb-section" grabCursor autoplay/>

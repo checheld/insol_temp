@@ -13,9 +13,9 @@
   overflow: hidden;
 
 
-  .inner-img {
-    height: 70vh;
-  }
+  // .inner-img {
+  //   height: 70vh;
+  // }
 
   .port-classic & .inner-img {
     height: 80vh;
@@ -43,7 +43,8 @@
     z-index: 2;
     top: auto;
     bottom: 0;
-    transform: translate(-50%, 10px);
+    // transform: translate(-50%, 10px);
+    transform: translate(-50%, 35px);
 
     .btn-portfolio {
       position: relative;

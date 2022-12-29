@@ -1,6 +1,6 @@
 import React from "react";
 
-const FlutterioIcon = () => {
+const FlutterIcon = () => {
 
 
     return <div>
@@ -26,4 +26,4 @@ const FlutterioIcon = () => {
     </div>
 
 }
-export default FlutterioIcon   
+export default FlutterIcon   

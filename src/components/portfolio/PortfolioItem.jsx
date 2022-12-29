@@ -48,10 +48,11 @@ function PortfolioItem({portoDetails, textButton, imageOnly, className}) {
                 {portoDetails.category && <MetaPost category={portoDetails.category} separate=", "/>}
 
                 {portoDetails.title &&
-                <h4 className="title-block"><NavLink to={getPortfolioLink(portoDetails)}>{portoDetails.title}</NavLink>
-                </h4>}
+                // <h4 className="title-block"><NavLink to={getPortfolioLink(portoDetails)}>{portoDetails.title}</NavLink>
+                // </h4>}
+                <h4 className="title-block">{portoDetails.title}</h4>}
 
-                <NavLink className="btn-portfolio" to={getPortfolioLink(portoDetails)}>{textButton}</NavLink>
+                {/* <NavLink className="btn-portfolio" to={getPortfolioLink(portoDetails)}>{textButton}</NavLink> */}
             </div>
         </div>
 
