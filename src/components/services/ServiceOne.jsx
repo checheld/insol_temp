@@ -11,6 +11,11 @@ import AngularIcon from '../icons/AngularIcon';
 import NodejsIcon from '../icons/NodejsIcon';
 import ReactIcon from '../icons/ReactIcon';
 import FlutterIcon from '../icons/FlutterIcon';
+import AmazonIcon from '../icons/AmazonIcon';
+import AzureIcon from '../icons/AzureIcon';
+import SqlIcon from '../icons/SqlIcon';
+import PostgresIcon from '../icons/PostgresIcon';
+
 const ServicesDetails = [
     // {
     //     icon: 'assets/img/services/1.png',
@@ -28,13 +33,18 @@ const ServicesDetails = [
     //     description: "Web design encompasses many different skills and disciplines in the production of all web.",
     // },
     {
-        icon: <NetIcon />,
-        title: ".NET",
+        icon: <AmazonIcon />,
+        title: "AWS",
         description: "",
     },
     {
-        icon: <AngularIcon />,
-        title: "ANGULAR",
+        icon: <AzureIcon />,
+        title: "AZURE",
+        description: "",
+    },
+    {
+        icon: <NetIcon />,
+        title: ".NET",
         description: "",
     },
     {
@@ -48,8 +58,23 @@ const ServicesDetails = [
         description: "",
     },
     {
+        icon: <AngularIcon />,
+        title: "ANGULAR",
+        description: "",
+    },
+    {
         icon: <FlutterIcon />,
         title: "FLUTTER",
+        description: "",
+    },
+    {
+        icon: <SqlIcon />,
+        title: "MS SQL",
+        description: "",
+    },
+    {
+        icon: <PostgresIcon />,
+        title: "POSTGRESQL",
         description: "",
     },
     // {

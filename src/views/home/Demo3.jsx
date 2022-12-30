@@ -101,7 +101,7 @@ function Demo3(props) {
 
             {/*Start Testimonial*/}
             <Container className="section-margin">
-                <Testimonial autoHeight loop grabCursor title="Feedback from our clients."/>
+                <Testimonial autoHeight loop grabCursor title="Feedback from our clients"/>
             </Container>
             {/*End Testimonial*/}
 

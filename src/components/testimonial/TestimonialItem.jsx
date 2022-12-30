@@ -8,9 +8,9 @@ function TestimonialItem({src, authorName, label, description}) {
             <p className='mb-25'>{description}</p>
 
             <div className="author-box">
-                {src && <span className="avatar">
+                {/* {src && <span className="avatar">
                     <LazyImg className='cover-bg-img' src={src} alt={authorName}/>
-                </span>}
+                </span>} */}
                 <h5 className="auth-info">{authorName}{(authorName && label) && ','} <span>{label}</span></h5>
 
             </div>

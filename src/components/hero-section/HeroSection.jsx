@@ -16,7 +16,7 @@ const HeroContent = {
     description: `InSol Group has assembled a team of experienced and dedicated professionals. 
         Our main mission is to develop flexible and intelligent solutions for your business`,
     authorTitle: "TONY",
-    authorJob: "CEO",
+    authorJob: "Founder & CEO",
     experienceNumber: "11",
     experienceDescription: `YEARS OF \nDIGITAL EXPERIENCE`,
     heroImage: '/assets/img/zan--gxW3aq6onU-unsplash.jpg'

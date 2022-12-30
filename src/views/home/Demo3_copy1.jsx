@@ -24,13 +24,13 @@ import {Helmet} from "react-helmet";
 
 
 const heroContent = {
-    title: "We Are InSol Group.",
+    title: "We Are InSol Group",
     src: '/assets/videos/video.mp4',
     video: {
         poster: '/assets/img/video-bg.jpg',
         loop: true
     },
-    subTitle: `We make digital products and services.`,
+    subTitle: `We make digital products and services`,
 
 }
 
@@ -108,7 +108,7 @@ function Demo3(props) {
 
             {/*Start Testimonial*/}
             <Container className="section-margin">
-                <Testimonial autoHeight loop grabCursor title="Feedback from our clients."/>
+                <Testimonial autoHeight loop grabCursor title="Feedback from our clients"/>
             </Container>
             {/*End Testimonial*/}
 

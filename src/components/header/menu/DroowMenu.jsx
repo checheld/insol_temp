@@ -60,7 +60,7 @@ const menuContent = [
     //         },
     //     ]
     // },
-    {name: "About", to: "/about"},
+    // {name: "About", to: "/about"},
     {name: "Contact", to: "/contact"},
 ];
 

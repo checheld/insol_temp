@@ -79,8 +79,10 @@
       }
     }
     @include media_768() {
-      background: $assistant-color;
-      box-shadow: 15px 15px 30px rgb(0 0 0 / 30%);
+      &:nth-of-type(even) {
+        background: $assistant-color;
+        box-shadow: 15px 15px 30px rgb(0 0 0 / 30%);
+      }
 
     }
 

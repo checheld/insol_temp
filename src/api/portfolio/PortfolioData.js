@@ -34,11 +34,11 @@ const data = [
     },
     {
         id: 3,
-        title: "Placeholder",
+        title: "SoTrusty",
         slug: 're-styling',
         src: '/assets/img/NDA 4.png',
         srcSlider: '/assets/img/project/project3/3.jpg',
-        category: ['Placeholder'],
+        category: ['E-commerce'],
         description: 'Once the brand strategy was sharp and real for everyone inside of the company, all the brand behavior started to roll out as stationary material.',
         overlay: 2,
         component: (props) => <ReStyling {...props}/>

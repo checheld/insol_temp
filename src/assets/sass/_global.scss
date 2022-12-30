@@ -59,7 +59,7 @@
   > *:not(.cover-section):not(.p-absolute) {
     flex: 0 0 calc((100% / var(--dsn-width-item)) - var(--dsn-col-item));
     margin-left: var(--dsn-col-item);
-    margin-top: var(--dsn-row-item);
+    // margin-top: var(--dsn-row-item);
   }
 
 
