@@ -94,7 +94,7 @@ const ServiceOne = ({className, ...restProps}: DsnGridProps) => {
         <DsnGrid className={dsnCN('dsn-services service-one ourTech', className)} {...restProps}>
             {ServicesDetails.map(
                 (item, index) =>
-                    <div className='service-item' key={index}>
+                    <div className='service-item tech-item' key={index}>
                             {item.icon}
                         <h4 className='title-block mb-20'>{item.title}</h4>
                         <p className='mt-15 dsn-auto'>{item.description}</p>
