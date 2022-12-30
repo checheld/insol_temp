@@ -11,13 +11,13 @@ import {dsnCN} from "../../hooks/helper";
 const TestimonialDetails = [
     {
         name: "Edward Luna",
-        label: "LMS",
+        label: "Product Manager in LMS",
         src: "assets/img/avatar/1.jpg",
         description: `"During our cooperation with InSol Group, we have developed a very good opinion about the company. The team pleased with a responsible and thorough approach to work, having established themselves as true professionals in their field. We wish them further growth and success in their work."`
     },
     {
         name: "Lukas Schmyrczyk",
-        label: "Founder",
+        label: "Co-Founder at SoTrusty",
         src: "assets/img/avatar/2.jpg",
         description: `"We've really enjoyed working InSol Group team. They joined our team and took initiative to understand everything and help lead the development of our project to make it what it is today. Overall, it was a really positive experience and we will consider working together again. Thank you!! :)"`
     },
@@ -62,7 +62,7 @@ function Testimonial({className, title, ...restProps}: SwiperOptions) {
                         {TestimonialDetails.map(
                             (item, index) => {
                                 return (
-                                    <SwiperSlide key={index}>
+                                    <SwiperSlide key={index} style={{minHeight: '200px'}}>
                                         <TestimonialItem
                                             src={item.src} authorName={item.name} label={item.label}
                                             description={item.description}/>

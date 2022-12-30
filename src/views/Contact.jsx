@@ -25,7 +25,7 @@ function Contact(props) {
         function init(ymaps) {
             var myMap = new ymaps.Map("map", {
                 center: [40.206597, 44.521862],
-                zoom: 19
+                zoom: 18
             }, {
                 searchControlProvider: 'yandex#search'
             });
@@ -71,7 +71,7 @@ function Contact(props) {
             /> */}
             <div id="map" style={{ height: "80vh", width: '100%' }} />
             {/*Start Contact Form && Info Box*/}
-            <Container>
+            <Container style={{marginTop: '120px', marginBottom: '120px'}}>
                 <DsnGrid col={2} colTablet={1}>
                     <InfoBox className="background-section p-30" />
                     <ContactForm />

@@ -27,7 +27,7 @@ const heroContent = {
     title: "We Are InSol Group",
     src: '/assets/videos/video.mp4',
     video: {
-        poster: '/assets/img/video-bg.jpg',
+        poster: '/assets/img/Screenshot_6.png',
         loop: true
     },
     subTitle: `We make digital products and services`,

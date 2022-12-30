@@ -25,10 +25,11 @@
 
 :root .v-dark, :root .v-dark-head {
   --bg-color: #000;
-  --assistant-color: #090909;
+  //--assistant-color: #090909;
+  --assistant-color: rgb(22 22 22);
   --font-color: rgba(255, 255, 255, 0.68);
   --heading-color: #fff;
-  --border-color: rgba(233, 233, 233, 0.1);
+  --border-color: rgba(233, 233, 233, 0.2);
 
   color: var(--font-color);
 }
