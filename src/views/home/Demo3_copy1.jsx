@@ -39,7 +39,7 @@ function Demo3(props) {
     return (
         <React.Fragment>
             <Helmet>
-                <title>InSol Group - Main page </title>
+                <title>InSol Group</title>
             </Helmet>
 
             <HeaderFull heroContent={heroContent} overlay={6}/>

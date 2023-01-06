@@ -52,7 +52,7 @@ function Contact(props) {
         <React.Fragment>
 
             <Helmet>
-                <title>InSol Group - Contact Us </title>
+                <title>InSol Group</title>
             </Helmet>
 
             {/*Start Header*/}
