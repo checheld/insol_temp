@@ -19,7 +19,7 @@ const HeroContent = {
     authorJob: "Founder & CEO",
     experienceNumber: "11",
     experienceDescription: `YEARS OF \nDIGITAL EXPERIENCE`,
-    heroImage: '/assets/img/zan--gxW3aq6onU-unsplash.jpg'
+    heroImage: 'https://res.cloudinary.com/dxyd7xncg/image/upload/v1672912961/zan--gxW3aq6onU-unsplash_nv6mrx.jpg'
 };
 
 

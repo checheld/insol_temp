@@ -62,7 +62,7 @@ function Testimonial({className, title, ...restProps}: SwiperOptions) {
                         {TestimonialDetails.map(
                             (item, index) => {
                                 return (
-                                    <SwiperSlide key={index} style={{minHeight: '200px'}}>
+                                    <SwiperSlide key={index} className='testimonialContainer'>
                                         <TestimonialItem
                                             src={item.src} authorName={item.name} label={item.label}
                                             description={item.description}/>

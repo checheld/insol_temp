@@ -1,5 +1,17 @@
 @import "../../assets/sass/helper";
 
+.testimonialContainer {
+  min-height: 200px;
+
+  @include media_1200() {
+    min-height: 240px;
+  }
+
+  @include media_400() {
+    min-height: 400px;
+  }
+}
+
 .dsn-testimonial {
 
   .content-box {
