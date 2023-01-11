@@ -1,14 +1,24 @@
 @import "../../assets/sass/helper";
 
 .testimonialContainer {
-  min-height: 200px;
+  min-height: 300px;
+}
 
-  @include media_1200() {
-    min-height: 240px;
-  }
-
-  @include media_400() {
+@media (max-width: 1205px) {
+  .testimonialContainer {
     min-height: 400px;
+  }
+}
+
+@media (max-width: 769px) {
+  .testimonialContainer {
+    min-height: 510px;
+  }
+}
+
+@media (max-width: 426px) {
+  .testimonialContainer {
+    min-height: 540px;
   }
 }
 
@@ -20,7 +30,6 @@
   }
 
   .testimonial-item {
-
 
     .author-box {
       display: flex;
