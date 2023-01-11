@@ -26,7 +26,7 @@ import {Helmet} from "react-helmet";
 const heroContent = {
     title: "We Are InSol Group",
     //src: 'https://res.cloudinary.com/dxyd7xncg/video/upload/v1673441602/main_page_video_ncxmqq.mp4',
-    src: 'https://res.cloudinary.com/dxyd7xncg/video/upload/br_4645k,q_70/v1673447771/video_sab01r.mp4',
+    src: 'https://res.cloudinary.com/dxyd7xncg/video/upload/q_65/v1673447771/video_sab01r.mp4',
     video: {
         poster: 'https://res.cloudinary.com/dxyd7xncg/image/upload/v1672912912/Screenshot_6_bfin18.png',
         loop: true
