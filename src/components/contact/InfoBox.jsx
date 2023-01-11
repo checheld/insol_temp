@@ -19,12 +19,12 @@ function InfoBox({className}) {
                 </li> */}
                 <li>
                     <span className="mr-10">Telegram</span>
-                    <a href="http://t.me/+1 (800) 990 8877" target="_blank" rel="noreferrer">+1 (800) 990 8877</a>
+                    <a href="http://t.me/insol_group" target="_blank" rel="noreferrer">@insol_group</a>
                 </li>
-                <li>
+                {/* <li>
                     <span className="mr-10">Email</span>
                     <a href="mailto:info@example.com" target="_blank" rel="noreferrer">info@example.com</a>
-                </li>
+                </li> */}
                 <li>
                     <span className="mr-10">Address</span>
                     <a href="#0" target="_blank" rel="noreferrer">Armenia, Yerevan, 59 Komitas Ave</a>

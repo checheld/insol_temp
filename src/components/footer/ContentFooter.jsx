@@ -11,7 +11,8 @@ function ContentFooter({className, ...restProps}) {
                 <strong>F</strong> <span>:</span> +001 225 3351
             </p> */}
             <p className="mt-2">
-                <strong>E</strong> <span>:</span> <a href="0#"> info@dsngrid.com</a>
+                {/* <strong>E</strong> <span>:</span> <a href="0#"> info@dsngrid.com</a> */}
+                <strong>TELEGRAM</strong> <span>:</span> <a href="http://t.me/insol_group" target="_blank">@insol_group</a>
             </p>
         </div>
     );

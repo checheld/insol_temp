@@ -25,9 +25,13 @@ function MenuContent({className}) {
                             +00 (2)012 3321
                         </a>
                     </p> */}
-                    <p className="links over-hidden">
+                    {/* <p className="links over-hidden">
                         <a className="link-hover" href="mailto:info@dsngrid.com"
                            data-hover-text="info@dsngrid.com">info@dsngrid.com</a>
+                    </p> */}
+                     <p className="links over-hidden">
+                        <a className="link-hover" href="http://t.me/insol_group"
+                           data-hover-text="@insol_group" target="_blank">@insol_group</a>
                     </p>
                 </div>
             </div>
