@@ -1,7 +1,7 @@
 import React from 'react';
 import GoogleMapReact from 'google-map-react';
 import mapIcon from './map-marker.png';
-import './style.scss' ;
+import './style.scss';
 
 
 interface MapProps {
@@ -51,36 +51,36 @@ interface MapProps {
 }
 
 
-function Map({googleMapKey, showMarker, mapIcon, className, height, markerOption, ...restProps}: MapProps) {
+function Map({ googleMapKey, showMarker, mapIcon, className, height, markerOption, ...restProps }: MapProps) {
 
     const defaultCenter = restProps.defaultCenter || {},
         center = restProps.center || {};
-        const ymaps = window.ymaps;
-        ymaps.ready(init);
-        function init() {
-          var myMap = new ymaps.Map("map", {
-            center: [47.21795105, 38.92467227],
-            zoom: 19
-          });
-          var myGeoObject = new ymaps.GeoObject({
-            geometry: {
-              type: "Point",
-              coordinates: [47.21795105, 38.92467227]
-            },
-            properties: {
-              iconContent: 'InSol',
-              hintContent: 'адрес фирмы в сплывающем окне'
-            }
-          },
-            {
-              preset: 'islands#blackStretchyIcon'
-            });
-          myMap.geoObjects.add(myGeoObject);
-        }
+    // const ymaps = window.ymaps;
+    // ymaps.ready(init);
+    // function init() {
+    //     var myMap = new ymaps.Map("map", {
+    //         center: [47.21795105, 38.92467227],
+    //         zoom: 19
+    //     });
+    //     var myGeoObject = new ymaps.GeoObject({
+    //         geometry: {
+    //             type: "Point",
+    //             coordinates: [47.21795105, 38.92467227]
+    //         },
+    //         properties: {
+    //             iconContent: 'InSol',
+    //             hintContent: 'адрес фирмы в сплывающем окне'
+    //         }
+    //     },
+    //         {
+    //             preset: 'islands#blackStretchyIcon'
+    //         });
+    //     myMap.geoObjects.add(myGeoObject);
+    // }
     return (
-        <div id="map" className={className} style={{height: height, width: '100%'}}>
+        <div className={className} style={{ height: height, width: '100%' }}>
 
-            {/* <GoogleMapReact
+            <GoogleMapReact
                 bootstrapURLKeys={{key: googleMapKey}}
                 {...restProps}
             >
@@ -90,7 +90,7 @@ function Map({googleMapKey, showMarker, mapIcon, className, height, markerOption
                     lng={center.lng || defaultCenter.lng}
                     mapIcon={mapIcon}
                 />}
-            </GoogleMapReact> */}
+            </GoogleMapReact>
 
         </div>
     );
@@ -98,11 +98,11 @@ function Map({googleMapKey, showMarker, mapIcon, className, height, markerOption
 
 
 const Marker = (props: any) => {
-    const {title, mapIcon} = props;
+    const { title, mapIcon } = props;
     return (
         <div className="marker"
-             style={{background: `url(${mapIcon}) no-repeat`, cursor: 'pointer'}}
-             title={title}
+            style={{ background: `url(${mapIcon}) no-repeat`, cursor: 'pointer' }}
+            title={'Insol Group'}
 
         />
     );
@@ -122,12 +122,12 @@ export const optionDroowMap = {
             "stylers": [{
                 "saturation": 36,
             },
-                {
-                    "color": "#000000",
-                },
-                {
-                    "lightness": 40,
-                },
+            {
+                "color": "#000000",
+            },
+            {
+                "lightness": 40,
+            },
             ],
         },
         {
@@ -136,12 +136,12 @@ export const optionDroowMap = {
             "stylers": [{
                 "visibility": "on",
             },
-                {
-                    "color": "#000000",
-                },
-                {
-                    "lightness": 16,
-                },
+            {
+                "color": "#000000",
+            },
+            {
+                "lightness": 16,
+            },
             ],
         },
         {
@@ -157,9 +157,9 @@ export const optionDroowMap = {
             "stylers": [{
                 "color": "#000000",
             },
-                {
-                    "lightness": 20,
-                },
+            {
+                "lightness": 20,
+            },
             ],
         },
         {
@@ -168,12 +168,12 @@ export const optionDroowMap = {
             "stylers": [{
                 "color": "#000000",
             },
-                {
-                    "lightness": 17,
-                },
-                {
-                    "weight": 1.2,
-                },
+            {
+                "lightness": 17,
+            },
+            {
+                "weight": 1.2,
+            },
             ],
         },
         {
@@ -182,9 +182,9 @@ export const optionDroowMap = {
             "stylers": [{
                 "color": "#000000",
             },
-                {
-                    "lightness": 20,
-                },
+            {
+                "lightness": 20,
+            },
             ],
         },
         {
@@ -193,9 +193,9 @@ export const optionDroowMap = {
             "stylers": [{
                 "color": "#000000",
             },
-                {
-                    "lightness": 21,
-                },
+            {
+                "lightness": 21,
+            },
             ],
         },
         {
@@ -204,9 +204,9 @@ export const optionDroowMap = {
             "stylers": [{
                 "color": "#000000",
             },
-                {
-                    "lightness": 17,
-                },
+            {
+                "lightness": 17,
+            },
             ],
         },
         {
@@ -215,12 +215,12 @@ export const optionDroowMap = {
             "stylers": [{
                 "color": "#000000",
             },
-                {
-                    "lightness": 29,
-                },
-                {
-                    "weight": 0.2,
-                },
+            {
+                "lightness": 29,
+            },
+            {
+                "weight": 0.2,
+            },
             ],
         },
         {
@@ -229,9 +229,9 @@ export const optionDroowMap = {
             "stylers": [{
                 "color": "#000000",
             },
-                {
-                    "lightness": 18,
-                },
+            {
+                "lightness": 18,
+            },
             ],
         },
         {
@@ -240,9 +240,9 @@ export const optionDroowMap = {
             "stylers": [{
                 "color": "#000000",
             },
-                {
-                    "lightness": 16,
-                },
+            {
+                "lightness": 16,
+            },
             ],
         },
         {
@@ -251,9 +251,9 @@ export const optionDroowMap = {
             "stylers": [{
                 "color": "#000000",
             },
-                {
-                    "lightness": 19,
-                },
+            {
+                "lightness": 19,
+            },
             ],
         },
         {
@@ -262,9 +262,9 @@ export const optionDroowMap = {
             "stylers": [{
                 "color": "#000000",
             },
-                {
-                    "lightness": 17,
-                },
+            {
+                "lightness": 17,
+            },
             ],
         },
     ],

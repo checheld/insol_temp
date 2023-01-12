@@ -18,35 +18,37 @@ const headerContent = {
 }
 
 function Contact(props) {
-    const ymaps = window.ymaps;
+    
+    const center = {lat: 40.20683444358442, lng: 44.52175571328052};
+    // const ymaps = window.ymaps;
 
-    useEffect(() => {
-        ymaps.ready(init);
-        function init(ymaps) {
-            var myMap = new ymaps.Map("map", {
-                center: [40.206597, 44.521862],
-                zoom: 18
-            }, {
-                searchControlProvider: 'yandex#search'
-            });
+    // useEffect(() => {
+    //     ymaps.ready(init);
+    //     function init(ymaps) {
+    //         var myMap = new ymaps.Map("map", {
+    //             center: [40.206597, 44.521862],
+    //             zoom: 18
+    //         }, {
+    //             searchControlProvider: 'yandex#search'
+    //         });
 
-            var myGeoObject = new ymaps.GeoObject({
-                geometry: {
-                    type: "Point",
-                    coordinates: [40.206597, 44.521862]
-                },
-                properties: {
-                    iconContent: 'InSol Group',
-                    hintContent: 'Armenia, Yerevan, 59 Komitas Ave'
-                }
-            },
-                {
-                    preset: 'islands#blackStretchyIcon'
-                });
-            myMap.geoObjects.add(myGeoObject);
-            myMap.behaviors.disable('scrollZoom');
-        }
-    }, []);
+    //         var myGeoObject = new ymaps.GeoObject({
+    //             geometry: {
+    //                 type: "Point",
+    //                 coordinates: [40.206597, 44.521862]
+    //             },
+    //             properties: {
+    //                 iconContent: 'InSol Group',
+    //                 hintContent: 'Armenia, Yerevan, 59 Komitas Ave'
+    //             }
+    //         },
+    //             {
+    //                 preset: 'islands#blackStretchyIcon'
+    //             });
+    //         myMap.geoObjects.add(myGeoObject);
+    //         myMap.behaviors.disable('scrollZoom');
+    //     }
+    // }, []);
     
     return (
         <React.Fragment>
@@ -61,15 +63,15 @@ function Contact(props) {
             </HeaderNormalTow>
 
             {/*Start Map*/}
-            {/* <Map
+            <Map
                 googleMapKey="AIzaSyDMyAS2jdzj-vdgBIFaIStYOWJtSlghndg"
-                defaultZoom={10}
+                defaultZoom={15}
                 options={optionDroowMap}
                 height="80vh"
                 defaultCenter={center}
                 showMarker
-            /> */}
-            <div id="map" style={{ height: "80vh", width: '100%' }} />
+            />
+            {/* <div id="map" style={{ height: "80vh", width: '100%' }} /> */}
             {/*Start Contact Form && Info Box*/}
             <Container style={{marginTop: '120px', marginBottom: '120px'}}>
                 <DsnGrid col={2} colTablet={1}>
