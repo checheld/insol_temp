@@ -37,7 +37,7 @@ function HeroSection({className, ...restProps}) {
                         <FadeUpTrigger>
                             {(ref) => <>
                                 <p ref={ref}>{HeroContent.description}</p>
-                                <h5 className='sm-title-block mt-30' ref={ref}>{HeroContent.authorTitle}</h5>
+                                <h3 className='sm-title-block mt-30' ref={ref}>{HeroContent.authorTitle}</h3>
                                 <span className="auth-position mt-10" ref={ref}>{HeroContent.authorJob}</span>
                                 <div className='experience mt-30'>
                                     <span className='number' ref={ref}>{HeroContent.experienceNumber}</span>
