@@ -13,7 +13,7 @@ const TestimonialDetails = [
         name: "Sven Beerweiler",
         label: "Founder/CEO Sprinter-rentals",
         src: "assets/img/avatar/2.jpg",
-        description: `For my business I needed an online shop with inventory management. I have experience in the space so I know the type of software languages i wanted to use. A responsive webapp on AWS with a React front end. From the Start Tony and InSol Group helped me with setup process. The team suggested the right road-map and keep delivering what's agreed upon on time. The webapp is now live and reliably running 24/7. I, my team, and customers love the webapp. We are excited to see new features go live and enjoy working with InSol Group`
+        description: `For my business I needed an online shop with inventory management. I have experience in the space so I know the type of software languages i wanted to use. A responsive webapp on AWS with a React front end. From the start Tony and his team helped me with setup process. The team suggested the right road-map and keep delivering what's agreed upon on time. The webapp is now live and reliably running 24/7. I, my team, and customers love the webapp. We are excited to see new features go live and enjoy working with InSol Group`
     },
     {
         name: "Edward Luna",
@@ -25,7 +25,7 @@ const TestimonialDetails = [
         name: "Lukas Schmyrczyk",
         label: "Co-Founder at SoTrusty",
         src: "assets/img/avatar/2.jpg",
-        description: `We've really enjoyed working InSol Group team. They joined our team and took initiative to understand everything and help lead the development of our project to make it what it is today. Overall, it was a really positive experience and we will consider working together again. Thank you!! :)`
+        description: `We've really enjoyed working with InSol Group team. They joined our team and took initiative to understand everything and help lead the development of our project to make it what it is today. Overall, it was a really positive experience and we will consider working together again. Thank you!! :)`
     },
     // {
     //     name: "Helen Ginsberg",
