@@ -5,21 +5,24 @@ import type {SmoothScrollbarProps} from "./SmoothScrollbar";
 import DroowMenu from "../components/header/menu/DroowMenu";
 import LoadingPage from "../hooks/LoadingPage";
 import CustomCursor from "./CustomCursor";
-
+import ThemeColor from "./ThemeColor";
 
 interface LayoutProps extends SmoothScrollbarProps {
     tag?: React.ElementType,
-    activeScrollbar?: boolean
+    activeScrollbar?: boolean,
+    setTheme: () => void
 }
 
 function Layout(
-    {className, children, tag: Tag = "div", activeScrollbar, ...restProps}: LayoutProps) {
+    {className, children, tag: Tag = "div", activeScrollbar, setTheme, ...restProps}: LayoutProps) {
 
     return (
         <Tag id="main_layout" className={className}>
             <DroowMenu hamburger/>
+            <ThemeColor setTheme={setTheme} />
             <LoadingPage/>
             {activeScrollbar ? <MainScrollBar  {...restProps}>{children}</MainScrollBar> : children}
+            {/* <MainScrollBar {...restProps}>{children}</MainScrollBar> */}
             <CustomCursor
                 duration={0.5}
                 durationChangeSize={0.3}

@@ -67,7 +67,7 @@ function Contact(props) {
                 googleMapKey="AIzaSyDMyAS2jdzj-vdgBIFaIStYOWJtSlghndg"
                 defaultZoom={15}
                 options={optionDroowMap}
-                height="80vh"
+                height="70vh"
                 defaultCenter={center}
                 showMarker
             />

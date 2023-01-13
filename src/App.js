@@ -1,4 +1,4 @@
-import React, {useLayoutEffect} from "react";
+import React, {useLayoutEffect, useState} from "react";
 // Importing the Bootstrap CSS
 import 'swiper/css/pagination';
 
@@ -15,6 +15,7 @@ import Layout from "./layout/Layout";
 
 function App() {
 
+    const [theme, setTheme] = useState('v-dark');
 
     useLayoutEffect(() => {
 
@@ -34,7 +35,7 @@ function App() {
 
     return (
 
-        <Layout className="v-dark background-main" tag="main">
+        <Layout className={`${theme} background-main`} tag="main" setTheme={setTheme}>
             <Router/>
         </Layout>
 

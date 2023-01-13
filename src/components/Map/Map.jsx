@@ -109,7 +109,7 @@ const Marker = (props: any) => {
 };
 
 Map.defaultProps = {
-    height: "80vh",
+    height: "70vh",
     defaultZoom: 14,
     mapIcon: mapIcon
 }

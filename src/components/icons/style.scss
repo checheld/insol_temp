@@ -1,0 +1,22 @@
+.circle {
+    border-radius: 50%;
+    height: 2em;
+    width: 2em;
+
+    svg {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        vertical-align: middle;
+        min-height: 2em;
+    display: table-cell;
+    }
+}
+
+.whiteCircle {
+    background: #f8f9fa;
+}
+
+.blackCircle {
+    background: #212529;
+}
