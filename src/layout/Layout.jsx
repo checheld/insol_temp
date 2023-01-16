@@ -21,8 +21,8 @@ function Layout(
             <DroowMenu hamburger/>
             <ThemeColor setTheme={setTheme} />
             <LoadingPage/>
-            {activeScrollbar ? <MainScrollBar  {...restProps}>{children}</MainScrollBar> : children}
-            {/* <MainScrollBar {...restProps}>{children}</MainScrollBar> */}
+            {/* {activeScrollbar ? <MainScrollBar  {...restProps}>{children}</MainScrollBar> : children} */}
+            <MainScrollBar {...restProps}>{children}</MainScrollBar>         
             <CustomCursor
                 duration={0.5}
                 durationChangeSize={0.3}

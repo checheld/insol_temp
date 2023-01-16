@@ -20,7 +20,7 @@ export interface SmoothScrollbarProps {
 function SmoothScrollbar({children, tag: Tag = "div", refTarget, height, option, ...restProps}: SmoothScrollbarProps) {
     const scrollbar = useRef();
     useLayoutEffect(() => {
-        if (option.plugins)
+        //if (option.plugins)
             Scrollbar.use(OverscrollPlugin);
 
         const scroll = Scrollbar.init(scrollbar.current, option);

@@ -79,10 +79,11 @@ function Map({ googleMapKey, showMarker, mapIcon, className, height, markerOptio
     // }
     return (
         <div className={className} style={{ height: height, width: '100%' }}>
-
             <GoogleMapReact
                 bootstrapURLKeys={{key: googleMapKey}}
-                {...restProps}
+                defaultCenter={defaultCenter}
+                defaultZoom={restProps.defaultZoom}
+                options={{scrollwheel: false, ...restProps}}
             >
                 {showMarker && <Marker
                     {...markerOption}

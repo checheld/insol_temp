@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import NdaIcon from "../icons/NdaIcon";
 import LazyImg from "../LazyImg";
 
 const Bg = styled.div`
@@ -10,7 +11,8 @@ const BgImage = React.forwardRef(({src, video, height, overlay, imageOnly, alt, 
 
     return (
         <Bg theme={{height: height}} data-overlay={overlay} className="hero-img overflow" {...restProps} ref={ref}>
-            {!video && <LazyImg src={src} className="cover-bg-img" alt={alt}/>}
+            {/* {!video && <LazyImg src={src} className="cover-bg-img" alt={alt}/>} */}
+            {!video && <NdaIcon />}
             {(video && !imageOnly) &&
             <video className="cover-bg-video" preload="none" autoPlay muted playsInline  {...video} >
                 <source src={src} type="video/mp4"/>

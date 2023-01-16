@@ -66,7 +66,7 @@ const Router = () => {
                     <Route exact path="/portfolio-2" element={<WorkTow/>}/>
                     <Route exact path="/portfolio/:slug" element={<ProjectDetails/>}/> */}
 
-                    <Route exact path="/about" element={<About/>}/>
+                    {/* <Route exact path="/about" element={<About/>}/> */}
                     <Route exact path="/contact" element={<Contact/>}/>
                     {/* <Route exact path="/blog-details" element={<BlogDetails/>}/> */}
                     <Route exact path="*" element={<NotFoundPage />}/>

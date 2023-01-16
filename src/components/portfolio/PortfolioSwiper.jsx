@@ -1,13 +1,9 @@
 import React from 'react'
 import './style.scss'
 import 'swiper/css';
-import NdaIcon from '../icons/NdaIcon';
-
 
 import {Swiper, SwiperSlide} from 'swiper/react';
 import {Pagination , SwiperOptions} from "swiper";
-
-
 
 import PortfolioItem from './PortfolioItem';
 import {getPortfolioData} from "../../api/portfolio/PortfolioData";

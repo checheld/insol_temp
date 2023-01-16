@@ -28,7 +28,8 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5);
+    // background-color: rgba(0, 0, 0, 0.5);
+    background-color: var(--theme-color);
     transition: transform 0.6s, background-color 0.6s cubic-bezier(0.08, 0.03, 0.22, 0.87), -webkit-transform 0.6s;
     z-index: 1;
   }
@@ -44,7 +45,7 @@
     top: auto;
     bottom: 0;
     // transform: translate(-50%, 10px);
-    transform: translate(-50%, 35px);
+    transform: translate(-50%, 30px);
 
     .btn-portfolio {
       position: relative;
@@ -68,7 +69,9 @@
     }
 
     .item-border {
-      background-color: rgba(0, 0, 0, 0.8);
+      // background-color: rgba(0, 0, 0, 0.8);
+      background-color: var(--bg-color);
+      opacity: 0.6;
     }
   }
 }

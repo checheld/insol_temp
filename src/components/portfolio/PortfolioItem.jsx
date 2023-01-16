@@ -36,7 +36,7 @@ function PortfolioItem({portoDetails, textButton, imageOnly, className}) {
 
 
     return (
-        <div className={dsnCN('portfolio-item text-center v-dark-head', className)} ref={ref}>
+        <div className={dsnCN('portfolio-item text-center', className)} ref={ref}>
             <div className="item-border"/>
             <div className='inner-img'>
                 <BgImage className={"dsn-swiper-parallax-transform"} src={portoDetails.src} video={portoDetails.video}
