@@ -15,10 +15,10 @@ function ContactForm({className}) {
         setLoading(true);
         console.log(form.current)
         emailjs.sendForm(
-            'service_584xa6r',
-            'template_9rldlvr',
+            'service_xsiikc2',
+            'template_bzokfzj',
             form.current,
-            'WgI7ABQuEJ7_XuxlC')
+            'EjhRlNFDgUAlDr1oX')
             .then(function(response) {
                 setLoading(false);
                 setResult(true);
