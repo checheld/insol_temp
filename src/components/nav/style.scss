@@ -58,5 +58,20 @@
   &.hide-nav:not(.dsn-open){
     transform: translateY(-100%);
   }
+}
 
+.change-color {
+  div a div h5 {
+    color: white;
+  }
+  div div {
+    color: rgba(255, 255, 255, 0.68);
+  }
+  div div .toggle-line {
+    background-color: white !important;
+  }
+}
+
+.temp {
+  background-color: $bg-color;
 }
