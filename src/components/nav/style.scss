@@ -62,16 +62,12 @@
 
 .change-color {
   div a div h5 {
-    color: white;
+    color: #f9f9f9;
   }
   div div {
     color: rgba(255, 255, 255, 0.68);
   }
   div div .toggle-line {
-    background-color: white !important;
+    background-color: #f9f9f9 !important;
   }
-}
-
-.temp {
-  background-color: $bg-color;
 }

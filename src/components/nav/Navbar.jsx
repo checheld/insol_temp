@@ -1,21 +1,40 @@
-import React, {useCallback, useLayoutEffect, useRef, useState} from 'react';
-import './style.scss';
+import React, {useCallback, useLayoutEffect, useRef, useState, useEffect} from 'react';
+import { useLocation } from "react-router-dom";
 import Dropdown from "./Dropdown";
 import Toggle from "./Toggle";
 import {Link} from "react-router-dom";
 import useEffectScroll from "../../hooks/useEffectScroll";
 import {dsnCN} from "../../hooks/helper";
-
+import './style.scss';
 
 const Navbar = ({children, textOpen, textMenu, textClose, hamburger}) => {
 
     const nav = useRef();
     const [typeNave, setTypeNave] = useState("");
     const [reserved, setReserved] = useState(false);
+    const [currentY, setCurrentY] = useState(0);
+    const [initialClass, setinItialClass] = useState('change-color');
+
+    const location = useLocation();
+    var currentPath = location.pathname;
+
+    useEffect(() => {
+        currentPath !== '/' && setinItialClass('')
+    }, []);
+
+    useEffect(() => {
+
+        currentPath === '/' && currentY < 170 && !reserved && nav.current.classList.add("change-color");
+        currentPath === '/' && reserved && nav.current.classList.remove("change-color");
+        currentPath === '/' && currentY > 170 && !reserved && nav.current.classList.remove("change-color");
+        currentPath !== '/' && nav.current.classList.remove("change-color");
+
+    }, [currentPath, currentY, reserved]);
+
     let scrDown = 0;
 
     useEffectScroll((e, x, y) => {
-
+        setCurrentY(y)
         if (y > 170) {
             if (scrDown < y) {
                 nav.current.classList.add("nav-bg", "hide-nav");
@@ -43,7 +62,6 @@ const Navbar = ({children, textOpen, textMenu, textClose, hamburger}) => {
 
 
     }
-
 
     const TransEnd = () => {
         if (reserved)
@@ -84,7 +102,7 @@ const Navbar = ({children, textOpen, textMenu, textClose, hamburger}) => {
 
 
     return (
-        <header className={dsnCN('site-header container-fluid', typeNave)} ref={nav}>
+        <header className={dsnCN(`site-header container-fluid ${initialClass}`, typeNave)} ref={nav}>
             {children}
             {typeNave && <Toggle
                 textOpen={textOpen}
