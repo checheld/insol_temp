@@ -127,7 +127,7 @@ ul {
     transform: translateY(10px) rotateX(75deg);
     opacity: 0;
     visibility: hidden;
-    transition: 1s $easeInOutBack;
+    transition: 0.3s $easeInOutBack;
     transition-property: opacity, visibility, transform;
     transform-origin: center top;
     transition-delay: calc(0.1s * var(--dsn-li-index));

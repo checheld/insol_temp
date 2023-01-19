@@ -48,7 +48,7 @@
 
             }
             &::before {
-                right: 0;
+                right: 10px;
                 width: 5px;
                 height: 5px;
                 background-color: $heading-color;
@@ -59,8 +59,8 @@
                 display: block;
                 right: 15px;
                 height: 1px;
-                width: 52px;
-                background: rgba(233, 233, 233, 0.1);
+                width: 55px;
+                background: var(--border-color) !important;
             }
         }
 
