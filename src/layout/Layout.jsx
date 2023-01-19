@@ -19,7 +19,7 @@ function Layout(
     return (
         <Tag id="main_layout" className={className}>
             <DroowMenu hamburger/>
-            {/* <ThemeColor setTheme={setTheme} /> */}
+            <ThemeColor setTheme={setTheme} />
             <LoadingPage/>
             {/* {activeScrollbar ? <MainScrollBar  {...restProps}>{children}</MainScrollBar> : children} */}
             <MainScrollBar {...restProps}>{children}</MainScrollBar>         
