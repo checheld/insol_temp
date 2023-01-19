@@ -28,7 +28,7 @@ function Layout(
     useEffect(() => {
         observer.current.observe(ref.current);
     }, [ref, observer]);
-    console.log(currentWidth)
+
     return (
         <Tag id="main_layout" className={className} ref={ref}>
             <DroowMenu hamburger currentWidth={currentWidth} setTheme={setTheme} />

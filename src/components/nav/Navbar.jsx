@@ -29,6 +29,9 @@ const Navbar = ({children, textOpen, textMenu, textClose, hamburger}) => {
         currentPath === '/' && currentY > 170 && !reserved && nav.current.classList.remove("change-color");
         currentPath !== '/' && nav.current.classList.remove("change-color");
 
+        currentPath === '/' && currentY < 170 && nav.current.classList.remove("nav-bg", "hide-nav");
+        currentPath !== '/' && nav.current.classList.add('nav-bg');
+        
     }, [currentPath, currentY, reserved]);
 
     let scrDown = 0;
@@ -41,8 +44,8 @@ const Navbar = ({children, textOpen, textMenu, textClose, hamburger}) => {
             } else {
                 nav.current.classList.remove("hide-nav");
             }
-        } else {
-            nav.current.classList.remove("nav-bg", "hide-nav");
+        // } else {
+        //     nav.current.classList.remove("nav-bg", "hide-nav");
         }
 
         scrDown = y;
