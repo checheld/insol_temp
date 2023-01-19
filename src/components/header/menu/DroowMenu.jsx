@@ -2,7 +2,7 @@ import React from "react";
 import Navbar, {Nav} from "../../nav/Navbar";
 import Brand from "../../brand/Brand";
 import MenuContent from "./MenuContent";
-
+import ThemeColor from "../../../layout/ThemeColor";
 
 const menuContent = [
     {
@@ -64,7 +64,7 @@ const menuContent = [
     {name: "Contact", to: "/contact"},
 ];
 
-const DroowMenu = ({hamburger}) => {
+const DroowMenu = ({hamburger, currentWidth, setTheme}) => {
 
     let $key = 0;
     const getSubMenu = (items) => {
@@ -84,7 +84,7 @@ const DroowMenu = ({hamburger}) => {
             <Navbar.Brand to={"/"}>
                 <Brand width="80px" height="26px"/>
             </Navbar.Brand>
-
+            {currentWidth < 426 && <ThemeColor setTheme={setTheme} currentWidth={currentWidth} />}
             <Navbar.Collapse cover="Menu">
                 <Nav>
                     {menuContent.map(item => getSubMenu(item))}

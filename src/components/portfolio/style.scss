@@ -7,11 +7,10 @@
   }
 }
 
-
 .portfolio-item {
   position: relative;
   overflow: hidden;
-
+  height: 550px;
 
   // .inner-img {
   //   height: 70vh;
@@ -131,4 +130,22 @@
   }
 
 
+}
+
+@media (min-width: 1441px) {
+  .portfolio-item {
+    height: 580px;
+  }
+}
+
+@media (max-width: 1025px) {
+  .portfolio-item {
+    height: 490px;
+  }
+}
+
+@media (max-width: 426px) {
+  .portfolio-item {
+    height: 520px;
+  }
 }

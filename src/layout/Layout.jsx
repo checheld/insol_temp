@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect, useRef, memo } from 'react';
 
 import MainScrollBar from "./MainScrollBar";
 import type {SmoothScrollbarProps} from "./SmoothScrollbar";
@@ -14,15 +14,28 @@ interface LayoutProps extends SmoothScrollbarProps {
 }
 
 function Layout(
-    {className, children, tag: Tag = "div", activeScrollbar, setTheme, ...restProps}: LayoutProps) {
+    { className, children, tag: Tag = "div", activeScrollbar, setTheme, ...restProps }: LayoutProps) {
 
+    const ref = useRef();
+    const [currentWidth, setCurrentWidth] = useState(0);
+    const observer = useRef(
+        new ResizeObserver((entries) => {
+            const { width } = entries[0].contentRect;
+            setCurrentWidth(width);
+        })
+    );
+
+    useEffect(() => {
+        observer.current.observe(ref.current);
+    }, [ref, observer]);
+    console.log(currentWidth)
     return (
-        <Tag id="main_layout" className={className}>
-            <DroowMenu hamburger/>
-            <ThemeColor setTheme={setTheme} />
-            <LoadingPage/>
+        <Tag id="main_layout" className={className} ref={ref}>
+            <DroowMenu hamburger currentWidth={currentWidth} setTheme={setTheme} />
+            {currentWidth > 426 && <ThemeColor setTheme={setTheme} />}
+            <LoadingPage />
             {/* {activeScrollbar ? <MainScrollBar  {...restProps}>{children}</MainScrollBar> : children} */}
-            <MainScrollBar {...restProps}>{children}</MainScrollBar>         
+            <MainScrollBar {...restProps}>{children}</MainScrollBar>
             <CustomCursor
                 duration={0.5}
                 durationChangeSize={0.3}
