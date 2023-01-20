@@ -34,8 +34,8 @@ const Brand = ({width, height, alt}) => {
         <MainBrand className="main-brand" width={width} height={height}>
             {/* <img className="logo-light" src={brandLight} alt={`${alt} - logo light`} width={width} height={height}/>
             <img className="logo-dark" src={brandDark} alt={`${alt} - logo dark`} width={width} height={height}/> */}
-            <h5 className="logo-light">InSol Group</h5>
-            <h5 className="logo-dark">InSol Group</h5>
+            <a href="#start"><h5 className="logo-light">InSol Group</h5></a>
+            <a href="#start"><h5 className="logo-dark">InSol Group</h5></a>
         </MainBrand>
     );
 }

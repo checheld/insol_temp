@@ -24,6 +24,11 @@ export const Meta = styled.span`
   letter-spacing: 1.2px;
   word-spacing: 2px;
 
+  
+  @media (max-width: 376px) {
+    font-size: 10px;
+  }
+
   span {
     margin-bottom: 8px;
   }

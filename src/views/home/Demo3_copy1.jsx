@@ -40,7 +40,7 @@ function Demo3(props) {
             <Helmet>
                 <title>InSol Group</title>
             </Helmet>
-
+            <div id="start"></div>
             <HeaderFull heroContent={heroContent} overlay={6}/>
 
             {/*Start Hero Section*/}

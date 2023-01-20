@@ -1,7 +1,7 @@
 import React, {useLayoutEffect, useRef} from 'react';
 import Scrollbar from 'smooth-scrollbar';
 import OverscrollPlugin, {OverscrollOptions} from "smooth-scrollbar/plugins/overscroll";
-
+import { AnchorPlugin } from './anchor-plugin';
 
 export interface SmoothScrollbarProps {
     refTarget?: void,
@@ -21,7 +21,7 @@ function SmoothScrollbar({children, tag: Tag = "div", refTarget, height, option,
     const scrollbar = useRef();
     useLayoutEffect(() => {
         //if (option.plugins)
-            Scrollbar.use(OverscrollPlugin);
+            Scrollbar.use(OverscrollPlugin, AnchorPlugin);
 
         const scroll = Scrollbar.init(scrollbar.current, option);
         if (refTarget)

@@ -144,9 +144,18 @@ const handleClickCloseMenu = (e) => {
     if (navToggle) navToggle.click();
 }
 
-export const Brand = ({children, ...restProps}) => {
+export const Brand = ({ children, ...restProps }) => {
+
+    const location = useLocation();
+    var currentPath = location.pathname;
+
     return (<div className="main-logo" onClick={handleClickCloseMenu}>
-        <Link  {...restProps} >{children}</Link>
+        {currentPath !== '/' ? (
+            <Link  {...restProps} >{children}</Link>
+        ) : (
+            children
+        )}
+
     </div>)
 };
 

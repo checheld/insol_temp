@@ -82,6 +82,7 @@
 
   @include media_768X991() {
     --bs-gutter-x: 35px;
+    --title-heading: 62px;
   }
   @include media_575X768() {
     --bs-gutter-x: 25px;
@@ -91,12 +92,19 @@
 
   @include media_575() {
     --bs-gutter-x: 15px;
-    --title-heading: 38px;
+    --title-heading: 32px;
     --title-section: 28px;
     --box-padding: 40px 30px;
 
   }
 
+  @include media_575() {
+    --title-heading: 38px;
+  }
+
+  @include media_400() {
+    --title-heading: 28px;
+  }
 
 }
 
